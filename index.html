@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Pet</title>
+    <style>
+         *{
+            font-family: Arial, Helvetica, sans-serif;
+         }
+         h2{
+            background-color: #b3d5f2;
+            color: #1762A4;
+         }
+         .span{
+            color: #1763a4;
+            
+         }
+         table{
+            
+            border-collapse: collapse;
+         }
+         table, th, td{
+            border: 1.5px, solid, #000;
+            
+         }
+         tr:nth-child(even){
+            background-color: #ddd;
+         }
+         tr:first-child{
+            background-color: #fff;
+         }
+         .number{
+            color: #051e68;
+         }
+        .both{
+            font-weight: 700;
+        }
+        .number-2{
+            color: #1762A4;
+        }
+        span{
+            font-weight: 800;
+            font-size: 16px;
+            letter-spacing:-1.5px;
+        }
+        form label{
+            display: inline-block;
+            min-width: 60px;
+        }
+        .about{
+            position: relative;
+        }
+        .about img{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 203px;
+            border-radius: 4px;
+        
+        }
+        @Media(max-width:666px){
+                .about img{
+                    position:static;
+                    width: 100%;
+                }
+                table{
+                    width: 100%;
+                };
+                .form input{
+                    width: calc(-74px);
+                }
+            }
+           
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <h1>Dog D.Dog</h1>
+        <div class="about">
+            <h2>About</h2>
+            <p>Woof Woof!</p>
+            <p>Hi,I'm Dog. I Love <span class="span">User Interface Design</span> </p>
+        <img src="./assets/img/pet1.png" alt="">
+            
+    </div>
+        <div class="section">
+            <h2>Course</h2>
+            <p>Here are some course i've taken:</p>
+            <table>
+                    <tr>
+                            <th>Course Number</th>
+                            <th>Course Title</th>
+                            <th>Semester Taken</th>
+                        
+                    </tr>
+                
+                <tbody>
+                    <tr>
+                        <th colspan="3">For Credit</th>
+                       
+                    </tr>
+                    <tr>
+                        <td class="number both"  >6.813</td>
+                        <td class="number-2 ">User Interface Design</td>
+                        <td class="number-2">Spring 2014</td>
+                    </tr>
+                    <tr>
+                        <td class="number both">6.034</td>
+                        <td>Artificial Intelligence</td>
+                        <td>Fall 2013</td>
+                    </tr>
+                    <tr>
+                        <td class="number both">6.006</td>
+                        <td>Introduction to Algorithms</td>
+                        <td>Fall 2013</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Listener</th>
+                    </tr>
+                    <tr>
+                        <td class="number-2 both">6.867</td>
+                        <td>Machine Learning</td>
+                        <td>Fall 2013</td>
+                    </tr>
+                    <tr>
+                        <td class="number-2 both">6.830</td>
+                        <td>Database Systems</td>
+                        <td>Fall 2012</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+        </div>
+        <div class="section">
+           <h2>Interests</h2>
+            <p>I am interested <span>HCI</span> ,memes and youtube videos.</p>
+            
+        </div>
+        <div class="section">
+            <h2>Submit Pet Information</h2>
+            <p>Would love to know what kinds of pets you 'own' (you'll never own me). Submit below! </p>
+        <form action="">
+            <div>
+            <label for="">Name:</label>
+            <input type="text" id="Name" name="Name">
+        </div>
+        <div>
+            <label for="">Phylum:</label>
+            <input type="text" id="Phylum" name="Phylum">
+        </div>
+        <div>
+            <label for="">Gender:</label>
+            <input type="text" id="Gender" name="Gender">
+        </div>
+        <input type="submit" value="Submit">
+        </form>
+
+        </div>
+        
+<div class="both"></div>
+    
+
+</body>
+</html>
